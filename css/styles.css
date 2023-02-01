@@ -1,0 +1,52 @@
+body {
+    background-color: #f1efef;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5
+}
+
+.font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-text-light {
+    color: #e6e6e6
+}
+
+.nav-text-light:hover {
+    color: #aaaaaa
+}
+
+.title-img img {
+    border: 15px solid #54bbe0;
+    border-radius: 50%;
+}
+
+.about {
+    background-color: #54bbe0;;
+}
+
+.about h2 {
+    color: #303030
+}
+
+.about p {
+    color: #303030;
+    font-weight: 400
+}
+
+.work {
+    background-color: #e6e6e6
+}
