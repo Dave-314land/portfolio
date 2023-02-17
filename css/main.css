@@ -87,74 +87,119 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* {
+  border: 0;
+}
+
+:root {
+  /* Colors */
+  --active-color: #4ecde1;
+  --alternate-section-color: #a5a4a4;
+  --background-color: #151515;
+  --gray: #D9D9D9;
+  --black-text: #242424;
+  --white: #FFF;
+
+  /* Fonts */
+  --font-family: 'Space Grotesk', sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+}
+
 body {
-    background-color: #f1efef;
-}
-
-.dark-mode {
-  background-color: #292929;
-  color: #7E7E7E
-}
-
-.container-fluid {
-    padding: 3% 15%;
+  background-color: var(--background-color);
+  font-family: var(--font-family)
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.5
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 5.5rem;
+  letter-spacing: -0.156rem;
 }
 
-.font-ubuntu {
-    font-family: 'Ubuntu', sans-serif;
+h2 {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 3.5rem;
+  letter-spacing: -0.094rem;
 }
 
-.font-montserrat {
-    font-family: 'Montserrat', sans-serif;
+h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 2rem;
 }
 
-.nav-text-light {
-    color: #e6e6e6
+p {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.75rem;
 }
 
-.nav-text-light:hover {
-    color: #aaaaaa
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.navbar-brand {
+  color: var(--white);
+}
+
+.nav-link {
+  color: var(--white);
+  font-weight: var(--font-weight-medium);
+}
+
+.nav-link:visited {
+  color: var(--white);
+}
+
+.nav-link:hover {
+  color: var(--white);
+  border-bottom: 2px solid var(--active-color);
+  padding-bottom: 2px;
+  
+}
+
+.nav-link:active {
+  border-bottom: 2px solid var(--active-color);
+  padding-bottom: 2px;
+  color: var(--white);
 }
 
 .title-img img {
-    border: 15px solid #54bbe0;
+    border: 2px solid var(--active-color);
     border-radius: 50%;
 }
 
 .about {
-    background-color: #54bbe0;;
-}
-
-.about h2 {
-    color: #303030
-}
-
-.about p {
-    color: #303030;
-    font-weight: 400
+  background-color: var(--alternate-section-color);
+  background-image: url("../img/coffee-cup-bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--black-text);
 }
 
 .work {
-    background-color: #e6e6e6
+  border-bottom: 1px solid var(--white);
 }
 
+.skills-card {
+  background-color: var(--white);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 10%;
+  box-shadow: -8px -5px 5px var(--active-color);
+}
 
-
-
-
-
-
-
-
-
-
+.card-text {
+  color: var(--black-text);
+  font-size: 1rem;
+}
 
 /* ==========================================================================
    Helper classes

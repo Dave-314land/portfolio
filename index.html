@@ -18,110 +18,120 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9d409ae046.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <section class="title">
-            <div class="container-fluid" >
+            <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand font-ubuntu" href="#"><img class="mr-2" src="img/portfolio-picture-circle.png" height="50" width="auto" alt="dave profile picture"/>Dave Piland</a>
+                    <a class="navbar-brand" href="#">
+                        <h3>davepiland</h3>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link font-ubuntu" href="#">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-ubuntu" href="#about">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-ubuntu" href="#work">Work</a>
+                                <a class="nav-link" href="#work">Work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link font-ubuntu" href="#contact">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
                 <div class="row">
                     <div class="col-sm-12 col-lg-6 my-4">
-                        <h1>Dave Piland</h1>
-                        <p><i>Developer - I like to create things with code.</i></p>
+                        <h2>Dave Piland</h2>
+                        <h3>Web Developer - I enjoy creatively solving problems with code.</h3>
                     </div>
                     <div class="col-sm-12 col-lg-6 title-img text-center">
-                        <img src="img/portfolio-picture-circle.png" height="300" width="auto" alt="dave profile picture"/>
+                        <img src="img/headshot-jpg.jpg" height="300" width="auto" alt="dave piland headshot"/>
                     </div>
                 </div>
             </div>
         </section>
         <section class="about">
-            <div class="container-fluid text-center">
+            <div class="container-fluid text-start">
                 <div class="row">
-                    <h2 id="about">About Me</h2>
+                    <div class="col-lg-8 mx-auto">
+                        <h3 class="section-title text-center">About Me</h3>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <p class="lead">I love using technology to creatively solve problems. I'm experienced in building
-                            <strong>websites, web applications, and automated programs</strong> through the software development lifecycle.
+                    <div class="col-lg-8 mx-auto">
+                        <p>I love using technology to creatively solve problems. I'm experienced in building
+                            <strong>websites, web applications, and automated programs</strong>.
+                            <br>
+                            <br>
                             I'm currently an Application Configuration Analyst at TeleTracking Technologies,
-                            but I also work with our Software Engineering department to develop internal tools to meet company needs.
-                            <b>I'm ready to move into the next phase of my career in an official development capacity.</b>
+                            where I work with our Software Engineering department to develop internal tools to meet company needs.
+                            <br>
+                            <br>
+                            I also freelance as a <u>Front End Developer</u> and love working with clients to produce 
+                            awesome-ness on the web.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="container-fluid text-center">
                 <div class="row">
-                    <h2 class="my-4" id="about">My Skills</h2>
+                    <h3 class="my-4">My Skills</h3>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 skills-card">
                     <img class="rounded-circle" src="img/code-arrows.png" alt="HTML code arrows" width="140" height="140">
                     <h4>Front End</h4>
                     <ul class="list-unstyled">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Bootstrap</li>
-                        <li>Javascript</li>
-                        <li>React</li>
+                        <li class="card-text">HTML5</li>
+                        <li class="card-text">CSS3</li>
+                        <li class="card-text">Bootstrap</li>
+                        <li class="card-text">Javascript</li>
+                        <li class="card-text">React</li>
                     </ul>
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-3 skills-card">
                         <img class="rounded-circle" src="img/code-brackets.png" alt="code brackets" width="140" height="140">
                         <h4>Back End</h4>
                         <ul class="list-unstyled">
-                            <li>Python</li>
-                            <li>Django/Flask</li>
-                            <li>MS SQL/PostgreSQL</li>
-                            <li>ORMs (SQLAlchemy)</li>
+                            <li class="card-text">Python</li>
+                            <li class="card-text">Django/Flask</li>
+                            <li class="card-text">MS SQL/PostgreSQL</li>
+                            <li class="card-text">ORMs (SQLAlchemy)</li>
                         </ul>
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-3 skills-card">
                     <img src="img/loop2.png" alt="continuous loop of CI CD stages" width="140" height="140">
                     <h4>CI/CD</h4>
                     <ul class="list-unstyled">
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>AWS/Heroku</li>
-                        <li>Bitbucket Pipelines</li>
-                        <li>Github Actions</li>
+                        <li class="card-text">Docker</li>
+                        <li class="card-text">Kubernetes</li>
+                        <li class="card-text">AWS/Heroku</li>
+                        <li class="card-text">Bitbucket Pipelines</li>
+                        <li class="card-text">Github Actions</li>
                     </ul>
                     </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
             </div>
+        </section>
         <section class="work" id="work">
-            <div class="container-fluid text-center bg-light">
-                <h2>My Work</h2>
-                <p class="lead text-muted">Check out my past projects and what I'm currently working on</p>
+            <div class="container-fluid text-center">
+                <h3>My Work</h3>
+                <p>Check out my past projects and what I'm currently working on</p>
                 <p>
                     <a href="https://github.com/Dave-314land" class="btn btn-secondary my-2">My Github <img src="img/Octocat.png" width="25" alt="github octocat logo"/></a>
                 </p>
             </div>
-            <div class="work bg-light">
+            <div class="work">
                 <div class="container">
                     <div class="row align-items-center justify-content-center">
                         <div class="col-sm-8 col-lg-4">
@@ -129,8 +139,9 @@
                                 <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="img/tffb-ipsum.png" data-holder-rendered="true">
                                 <div class="card-body">
                                     <h5 class="card-title">TFFB Lorem Ipsum Generator</h5>
-                                    <p class="card-text"> Lorem ipsum generator of The Fantasy Footballers Podcast related content. This site generates a random order of phrases based on the number of paragraphs selected by the user.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                                    <p class="card-text"> Lorem ipsum generator of The Fantasy Footballers Podcast related content. 
+                                        This site generates a random order of phrases based on the number of paragraphs selected by the user.<br><br></p>
+                                    <div class="d-flex justify-content-evenly align-items-center">
                                         <div class="btn-group">
                                             <a href="https://tffb-ipsum.com/" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Site</button></a>
                                         </div>
@@ -147,7 +158,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Tutu Atwell React Weight Calculator</h5>
                                     <p class="card-text"> Takes weight in lbs provided by end user and converts into how many TuTu Atwell's the user weighs. This is a fun little fan project built with React and inspired by the Fantasy Footballers Podcast.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-evenly align-items-center">
                                         <div class="btn-group">
                                             <a href="https://player-weight-calculator.herokuapp.com/" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Site</button></a>
                                         </div>
@@ -164,7 +175,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Client Website Refresh</h5>
                                     <p class="card-text"> This is a website refresh for the Pat McAfee Show. The goal was to convert the site from a template builder to a custom, mobile-responsive, site and to provide a contact form for partnerships.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex justify-content-evenly align-items-center">
                                         <div class="btn-group">
                                             <a href="https://graceful-travesseiro-0886ef.netlify.app/" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">Site</button></a>
                                         </div>
@@ -182,10 +193,11 @@
         <section class="contact" id="contact">
             <div class="container-fluid text-center">
                 <div class="row align-items-center justify-content-center">
-                    <h2 class="mb-3">Let's work together</h2>
-                    <p class="lead mb-5">Send me a message on one of my socials. I'm looking forward to hearing from you!</p>
+                    <h3 class="mb-3">Let's work together</h3>
+                    <p class="lead mb-5">Send me an email or message me on one of my socials. I'm looking forward to hearing from you!</p>
                     <div class="col-sm-12 mb-5">
                         <ul class="list-unstyled list-group list-group-horizontal align-items-center justify-content-center">
+                            <li class="ms-3"><a class="link-light" href="mailto:dave.l.piland@gmail.com?subject=Working together" target="_blank"><i class="fa fa-envelope fa-2x"></i></a></li>
                             <li class="ms-3"><a class="link-light" href="https://twitter.com/DavePiland" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
                             <li class="ms-3"><a class="link-light" href="https://www.facebook.com/david.piland.165" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
                             <li class="ms-3"><a class="link-light" href="https://www.linkedin.com/in/davepiland/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
